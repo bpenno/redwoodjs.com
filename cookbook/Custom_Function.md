@@ -14,11 +14,11 @@ Step one is to actually create the custom Function. Naturally, we have a generat
 yarn rw generate function serverTime
 ```
 
-That will create a shell for you that you can test out right away. Make sure your dev server is running with `yarn rw dev` and point your browser to `http://localhost:8910/.netlify/functions/serverTime`
+That will create a shell for you that you can test out right away. Make sure your dev server is running with `yarn rw dev` and point your browser to `http://localhost:8911/serverTime` 
 
 ![serverTime Function output](https://user-images.githubusercontent.com/300/81349715-69462700-9075-11ea-87c0-a8a1c564a1b6.png)
 
-> Since Redwood currently plays nicely with Netlify we use the same proxy path that Netlify does for functions, `/.netlify/functions`. If you are deploying somewhere else you can change this in  `redwood.toml` in the root of your app.
+> We have setup a proxy path for functions to `/.redwood/functions` so you can also point your browser to `http://localhost:8910/.redwood/functions/serverTime` to test your function. You can change this in `redwood.toml` in the root of your app.
 
 ## Getting the Time
 
